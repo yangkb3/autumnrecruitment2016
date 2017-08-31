@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>About CDMG</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"> 
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="assets/css/main-mobile.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="assets/css/swiper.min.css">
@@ -25,21 +25,21 @@
 <body>
     <div class="swiper-container swiper-container-v" style="direction: vertical;">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" id="intro" style="background: linear-gradient(135deg, #ff5db1 0%, rgba(0, 87, 137, 0.7) 100%); color:white; width:100%;justify-content:flex-start;">
+            <div class="swiper-slide" id="intro" style="background: linear-gradient(135deg, #ff5db1 0%, rgba(0, 87, 137, 0.7) 100%); color:white; width:100%;justify-content:center;align-items:flex-start">
                 <section id="intro" style="width:100%;">
                     <h1>Who are we</h1>
-                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0s">我们是CDMG</p>
-                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1s"> 全名: Clinical Data Mining Group</p>
-                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2s"> 小名: 数据游戏 </p>
-                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="3s"> 诞生于 年</p>
-                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="4s"> 由八年制师兄师姐自发组建</p>
-                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="5s"> 我们旨在搭建学习交流平台，建设高效的现代化科研团队</p>
-                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="6s"> 平时主要进行生物医学大数据挖掘的学习与实战</p>
-                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="7s"> 以自主学习和操作为主，组内交流为辅</p>
-                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="8s"> 互相学习，共同进步</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0s">We are CDMG</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1s"> Full name: Computational Data Mining Group</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2s"> Nick name: Game of data</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="3s"> Born in 2014</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="4s"> Set up by senior students in the eight-year program of clinical medicine major</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="5s"> Aiming at providing a platform for studying and communicating, constituting a modernized research team
+                        of high efficiency</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="6s"> We focus on big data mining in the biomedical area</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="7s"> In our team, we mainly usually learn by ourselves, supplemented by communicating with other team members.</p>
+                    
                 </section>
-
-                <img src="assets/img/arrow.png" onclick="swiperV.slideNext()" class="arrow1" />
+                <img src="assets/img/arrow.png" onclick="swiperV.slideNext()" class="arrow" />
 
             </div>
 
@@ -48,79 +48,57 @@
                 <div style="width:100%;position:relative;left:0;top:0;height:15%;">
                     <h1>Our achievements</h1>
                 </div>
-                <div class="swiper-container swiper-container-h" style="width:70%; height:auto;">
-                    <div class="swiper-wrapper" style="height:auto;">
-                        <div id="barchart1" class="swiper-slide" style="height:auto;">
-                            <!--section-->
-                            <!--h2>SCI论文数量</h2-->
-                            <canvas id="canvas1" style="display: flex; justify-content: center; align-items: center; "></canvas>
-                            <script>
-                                var barChartData2 = {
-                                    labels: ["已发表", "今年发表", "在投"],
-                                    datasets: [{
-                                        backgroundColor: ["DeepPink", "Limegreen", "DodgerBlue"],
-                                        strokeColor: "rgba(220,220,220,1)",
-                                        data: [43, 11, 6]
-                                    }]
+                <div id="barchart1" style="height:auto;width:90%;align-self:center;">
+                    <canvas id="canvas1" style="display: flex; justify-content: center; align-items: center;align-self:center"></canvas>
+                    <script>
+                        var barChartData2 = {
+                            labels: [["Papers", "Published"], ["Papers", "Under", "Review"], ["Total", "IF"]],
+                            datasets: [
+                                {
+                                    label: 'Paper',
+                                    yAxesGroup: 'Paper',
+                                    backgroundColor: ["DeepPink", "Limegreen", "DodgerBlue"],
+                                    data: [9, 8, 8.99]
+                                }
+                            ]
 
-                                };
-                            </script>
-                            <!--/section-->
-                        </div>
-                        <div id="barchart2" class="swiper-slide" style="height:auto;">
-                            <!--section-->
-                            <!--h2>IF</h2-->
-                            <canvas id="canvas2" style="display: flex; justify-content:space-around; align-items:center;"></canvas>
-                            <script>
-                                var barChartData1 = {
-                                    labels: ["总计", "去年累计"],
-                                    datasets: [{
-                                        backgroundColor: ["Limegreen", "DodgerBlue"],
-                                        strokeColor: "rgba(220,220,220,1)",
-                                        data: [88, 18]
-                                    }]
-
-                                };
-                            </script>
-                            <!--/section-->
-                        </div>
-                    </div>
-                    <!--div class="swiper-pagination-h"></div-->
+                        };
+                    </script>
                 </div>
-                <div class="swiper-button-prev swiper-button-black" id="prev"></div>
-                <div class="swiper-button-next swiper-button-black" id="next"></div>
-                <div id="greyside" style="display:flex; flex-direction:column; height:35%; justify-content:center;align-items:center; background:grey;font-size: 7.5vw;padding-left:2vmin;padding-right:2vmin;width:100%;bottom:0;position:absolute;color:white">
-                    <span style="line-height:1.7; margin-top:0;">最快于</span><br /><span id="myTargetElement" style="font-size: 20vw;">15</span><br
+                <div id="greyside">
+                    <span style="margin-top:2vmin; margin-bottom:2vmin;">Once we spent only</span><br /><span id="myTargetElement" style="font-size: 20vw;">15</span><br
                     />
-                    <span style="line-height:1.7;margin-bottom:12vmin">天内发表SCI论文</span>
+                    <span style="margin-top:1vmin;margin-bottom:1vmin;line-height:initial;">days getting an article published<br>on an SCI-indexed journal</span>
+                    <img src="assets/img/arrow.png" onclick="swiperV.slideNext()" style="width: 7%">
                 </div>
-                <img src="assets/img/arrow.png" onclick="swiperV.slideNext()" style="position: absolute; bottom:7vmin; width: 10%">
             </div>
 
-            <div class="swiper-slide" id="intro" style="background: linear-gradient(135deg, #ff5db1 0%, rgba(0, 87, 137, 0.7) 100%); justify-content:flex-start;">
-                <section id="req" style="text-align:left; color:white; width:100%;">
+            <div class="swiper-slide" style="background: linear-gradient(135deg, #ff5db1 0%, rgba(0, 87, 137, 0.7) 100%); justify-content:center; align-items:flex-start">
+                <section id="req">
                     <h1>Who we want</h1>
-                    <ul class="animated fadeIn">
-                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0s"><img src="assets/img/tick.png"></img>中山医八年制大五以下学生</li>
-                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1s"><img src="assets/img/tick.png"></img>对科学有热情，乐于探索，乐于分享</li>
-                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2s"><img src="assets/img/tick.png"></img>认真负责，执行力强</li>
-                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="3s"><img src="assets/img/tick.png"></img>抗压能力及心理素质较强</li>
-                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="4s"><img src="assets/img/tick.png"></img>擅长BI/ Meta/ R/ Python/ MySQL/ PS者优先</li>
-                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="5s"><img src="assets/img/tick.png"></img>有学术论文写作、投稿经验者优先</li>
+                    <ul class="animated fadeIn" style="display:flex;flex-direction:column;justify-content:center;align-items:center;">
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0s"><img src="assets/img/tick.png"></img>SYSU students under grade 5 in the eight-year program of clinical
+                            medicine</li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1s"><img src="assets/img/tick.png"></img>Responsible and efficient troubleshooters with mental toughness
+                            and strong resistance of pressure</li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2s"><img src="assets/img/tick.png"></img>Passionate geeks in science with willingness for exploration
+                            and sharing</li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="3s"><img src="assets/img/tick.png"></img>Those who are proficient in BI/ Meta/ R/ Python/ MySQL/ PS or
+                            have experience in academic writing and article submitting are preferred.</li>
                     </ul>
                 </section>
-                <img src="assets/img/arrow.png" onclick="swiperV.slideNext()" class="arrow1" />
+                <img src="assets/img/arrow.png" onclick="swiperV.slideNext()" class="arrow" />
             </div>
             <div class="swiper-slide" style="display:flex;flex-direction:column; align-items:center; justify-content:center;">
                 <section id="last">
 
                     <p style="margin-top: 23%" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0s">If you want to try something new</p>
                     <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1s">If you are inspired by us</p>
-                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2s">If you can meet our all request</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2s">If you can meet all our requests</p>
                     <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="3s">Please do not hesitate to press the button below</p>
                 </section>
                 <div class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0s" swiper-animate-delay="4s" style="width: 100%;background: linear-gradient(135deg, #ff5db1 0%, rgba(0, 87, 137, 0.7) 100%);height:30%">
-                    <a href="Join us.html"><button>Join us</button></a>
+                    <a href="https://goo.gl/forms/YxxMUoBfwcOaGQR03"><button>Join us</button></a>
                 </div>
                 </span>
             </div>
@@ -174,19 +152,20 @@
 
                                 function repaint() {
                                     //alert('+1s');
-                                    if (document.body.clientWidth < 769) {
-                                        fsize = 14;
+                                    if (document.body.clientWidth < 350) {
+                                        fsize = 12;
+                                    }
+                                    else if (document.body.clientWidth < 700) {
+                                        fsize = 15;
                                     }
                                     else {
                                         fsize = 28;
                                     }
                                     try {
                                         window.myBar1.destroy();
-                                        window.myBar2.destroy();
                                     }
                                     catch (e) { }
                                     var ctx1 = document.getElementById("canvas1").getContext("2d");
-                                    //ctx1.canvas.width = document.body.clientwidth / 2;
                                     ctx1.canvas.height = document.body.clientHeight * 0.4;
                                     window.myBar1 = new Chart(ctx1, {
                                         type: 'bar',
@@ -205,6 +184,9 @@
                                                         var meta = chartInstance.controller.getDatasetMeta(i);
                                                         meta.data.forEach(function (bar, index) {
                                                             var data = dataset.data[index];
+                                                            if (data == 8.99) {
+                                                                var data = 27;
+                                                            }
                                                             ctx.fillText(data, bar._model.x, bar._model.y - 5);
                                                         });
                                                     });
@@ -218,92 +200,59 @@
                                             maintainAspectRatio: false,
                                             scales: {
                                                 xAxes: [{
-                                                    maxBarThickness: 100,
+                                                    categoryPercentage: 0.5,
+                                                    maxBarThickness: 40,
                                                     gridLines: {
                                                         display: false
                                                     },
                                                     ticks: {
-                                                        fontSize: fsize
+                                                        fontSize: fsize - 2
                                                     }
                                                 }],
                                                 yAxes: [{
+                                                    id: 'Paper',
+                                                    position: 'left',
+                                                    scaleLabel: {
+                                                        display: true,
+                                                        labelString: 'Number of Papers',
+                                                        fontSize: fsize - 1,
+                                                    },
                                                     gridLines: {
-                                                        display: true
+                                                        display: false
                                                     },
                                                     ticks: {
-                                                        max: 60,
+                                                        max: 10,
+                                                        min: 0,
                                                         fontSize: fsize
                                                     }
-                                                }]
-                                            },
-                                            legend: {
-                                                display: false,
-                                            },
-                                            title: {
-                                                display: true,
-                                                fontSize: fsize,
-                                                text: 'SCI论文数量'
-                                            }
-                                        }
-                                    });
-                                    var ctx2 = document.getElementById("canvas2").getContext("2d");
-                                    //ctx2.canvas.width = document.body.clientwidth / 2;
-                                    ctx2.canvas.height = document.body.clientHeight * 0.4;
-                                    window.myBar2 = new Chart(ctx2, {
-                                        type: 'bar',
-                                        data: barChartData1,
-                                        options: {
-                                            "hover": {
-                                                "animationDuration": 0
-                                            },
-                                            "animation": {
-                                                "duration": 3000,
-                                                "onComplete": function () {
-                                                    var chartInstance = this.chart, ctx = this.chart.ctx;
-                                                    ctx.textAlign = 'center';
-                                                    ctx.textBaseline = 'bottom';
-                                                    this.data.datasets.forEach(function (dataset, i) {
-                                                        var meta = chartInstance.controller.getDatasetMeta(i);
-                                                        meta.data.forEach(function (bar, index) {
-                                                            var data = dataset.data[index];
-                                                            ctx.fillText(data, bar._model.x, bar._model.y - 5);
-                                                        });
-                                                    });
+                                                },
+                                                {
+                                                    id: 'IF',
+                                                    position: 'right',
+                                                    scaleLabel: {
+                                                        display: true,
+                                                        labelString: 'Impact Factors',
+                                                        fontSize: fsize,
+                                                    },
+                                                    gridLines: {
+                                                        display: false
+                                                    },
+                                                    ticks: {
+                                                        max: 30,
+                                                        min: 0,
+                                                        fontSize: fsize
+                                                    }
                                                 }
-                                            },
-                                            tooltips: {
-                                                "enabled": false
-                                            },
-                                            responsive: true,
-                                            responsiveAnimationDuration: 80,
-                                            maintainAspectRatio: false,
-                                            scales: {
-                                                xAxes: [{
-                                                    maxBarThickness: 100,
-                                                    gridLines: {
-                                                        display: false
-                                                    },
-                                                    ticks: {
-                                                        fontSize: fsize + 2
-                                                    }
-                                                }],
-                                                yAxes: [{
-                                                    gridLines: {
-                                                        display: true
-                                                    },
-                                                    ticks: {
-                                                        max: 100,
-                                                        fontSize: fsize
-                                                    }
-                                                }]
+                                                ]
                                             },
                                             legend: {
                                                 display: false,
                                             },
                                             title: {
                                                 display: true,
-                                                fontSize: fsize,
-                                                text: 'IF'
+                                                fontSize: fsize - 1,
+                                                text: 'Major Achievements Last Year',
+                                                padding: fsize + 10
                                             }
                                         }
                                     });
